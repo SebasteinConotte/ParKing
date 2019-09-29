@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".ScanPlateActivity">
+    <SurfaceView
+        android:id="@+id/maSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/licensePlateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="LICENS PLATE"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/detectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="verifyPlate"
+        android:text="SCAN"
+        android:textSize="24sp" />
+</LinearLayout>
